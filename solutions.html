@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحلول المستحدثة - Marcyrl Cybersecurity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { cyber: { bg: '#0a0f1d', card: '#111827', border: '#1f293d', accent: '#06b6d4', emerald: '#10b981', amber: '#f59e0b', rose: '#f43f5e', purple: '#8b5cf6' } }, fontFamily: { sans: ['Tajawal', 'Inter', 'sans-serif'] } } } }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Tajawal', 'Inter', sans-serif; background-color: #070b14; color: #e2e8f0; }
+        .glass-panel { background: rgba(17, 24, 39, 0.75); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #0b1120; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #06b6d4; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-white">
+
+    <header class="sticky top-0 z-40 glass-panel border-b border-slate-800/80 px-4 lg:px-8 py-3.5">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-cyan-600 via-teal-500 to-emerald-400 flex items-center justify-center text-slate-950 font-black text-xl shadow-lg shadow-cyan-500/20"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                    <h1 data-i18n="companyName" class="text-lg font-black text-white tracking-wide">شركة ماركيرل للصناعات الدوائية</h1>
+                    <p data-i18n="companySub" class="text-xs text-cyan-400 font-medium">Marcyrl Cybersecurity Project</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+                <a href="index.html" class="px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold flex items-center gap-2 border border-slate-700 transition">
+                    <i class="fa-solid fa-arrow-right ltr:fa-arrow-left"></i>
+                    <span data-i18n="backLabel">العودة للوحة الرئيسية</span>
+                </a>
+                <button id="langToggle" onclick="toggleLanguage()" class="px-3 py-2 rounded-lg bg-cyan-950/60 text-cyan-400 hover:bg-cyan-900/60 text-xs font-bold border border-cyan-700/50 flex items-center gap-1.5 transition">
+                    <i class="fa-solid fa-globe"></i><span id="langLabel">English</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl w-full mx-auto px-4 lg:px-8 py-8 flex-1">
+        <div class="flex items-center gap-3 mb-2">
+            <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg font-bold border border-purple-500/20">03</div>
+            <span data-i18n="sec3Badge" class="px-3 py-1 rounded-full text-xs font-bold bg-purple-500/10 text-purple-400 border border-purple-500/30">3 أنظمة رئيسية</span>
+        </div>
+        <h2 data-i18n="sec3Title" class="text-2xl font-extrabold text-white mb-2">ثالثًا: الحلول والأنظمة الأمنية المستحدثة (New Implementation Solutions)</h2>
+        <p data-i18n="sec3Sub" class="text-sm text-slate-400 mb-8">جميع الأنظمة والحلول التي لم يسبق وجودها بشركة ماركيرل لتغطية كافة المحاور الأمنية</p>
+
+        <div class="space-y-6 mb-10">
+            <!-- OpenVAS -->
+            <div class="glass-panel rounded-2xl p-6 border border-emerald-500/20">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg"><i class="fa-solid fa-bug"></i></div>
+                    <h3 class="text-lg font-bold text-white">1. OPENVAS Vulnerability Scanner</h3>
+                    <span data-i18n="openvasBadge" class="ms-auto text-[11px] px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 font-bold border border-emerald-500/20">مكتمل والمخرجات ممتازة</span>
+                </div>
+                <div class="space-y-3 text-sm text-slate-300 leading-relaxed">
+                    <p data-i18n="mOpenVasText">هو عبارة عن فاحص تقني شامل للثغرات، تم تثبيته وتجربته وتشغيله بنجاح باهر داخل بيئة شركة ماركيرل.</p>
+                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                        <h5 data-i18n="mOpenVasResTitle" class="font-bold text-emerald-400 text-xs mb-1">النتائج الفعلية:</h5>
+                        <ul class="list-disc list-inside space-y-1 text-slate-300">
+                            <li data-i18n="mOpenVasR1">اكتشاف الثغرات البرمجية والأنظمة التي تحتاج لتحديثات أمنية بشكل تلقائي.</li>
+                            <li data-i18n="mOpenVasR2">تقديم تقارير دورية تتيح للفريق إغلاق الثغرات قبل استغلالها.</li>
+                            <li data-i18n="mOpenVasR3">تم ربطه وتكامله بنجاح مع نظام الـ SIEM Solution المركزي.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scanner -->
+            <div class="glass-panel rounded-2xl p-6 border border-cyan-500/20">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg"><i class="fa-solid fa-link"></i></div>
+                    <h3 class="text-lg font-bold text-white">2. Marcyrl Cybersecurity Scanner</h3>
+                    <span data-i18n="scannerBadge" class="ms-auto text-[11px] px-2.5 py-1 rounded bg-cyan-500/10 text-cyan-400 font-bold border border-cyan-500/20">انطلق الأحد 1 نوفمبر 2026</span>
+                </div>
+                <div class="space-y-3 text-sm text-slate-300 leading-relaxed">
+                    <p data-i18n="mScannerText">نظام خاص تم انطلاقه رسميًا يوم <strong>الأحد الموافق 1 نوفمبر 2026</strong>، وأبدى نجاحًا باهرًا جدًا وملموسًا لدى الموظف النهائي.</p>
+                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                        <h5 data-i18n="mScannerFeatTitle" class="font-bold text-cyan-400 text-xs mb-1">مميزات المنظومة:</h5>
+                        <p data-i18n="mScannerFeatText" class="text-slate-300">يتيح للموظفين فحص الروابط والوصلات قبل الضغط عليها لمنع الوصول للروابط المشبوهة أو البرمجيات الخبيثة، مما يحمي أجهزة وحسابات الشركة من الاختراق.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIEM -->
+            <div class="glass-panel rounded-2xl p-6 border border-amber-500/30 bg-gradient-to-b from-slate-900 to-cyan-950/10">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-lg"><i class="fa-solid fa-eye"></i></div>
+                    <h3 class="text-lg font-bold text-white">3. Enterprise SIEM Solution</h3>
+                    <span data-i18n="siemBadge" class="ms-auto text-[11px] px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 font-bold border border-amber-500/20">إنجاز &gt; 80% • إطلاق 3 يناير 2027</span>
+                </div>
+                <div class="space-y-4 text-sm text-slate-300 leading-relaxed">
+                    <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden"><div class="bg-gradient-to-r from-amber-500 to-yellow-400 h-2 rounded-full" style="width: 80%"></div></div>
+                    <div data-i18n="mSiemVision" class="p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl text-amber-200 text-xs">
+                        <strong>رؤية المشروع والتكلفة:</strong> فضّلنا الاعتماد على كفاءة التطبيق الذاتي بدلاً من تحميل الشركة مبالغ طائلة في أنظمة مدفوعة. النظام يعتمد بنسبة 100% على احترافية الـ Implementer وتجهيز القواعد والربط التكاملي.
+                    </div>
+                    <h5 data-i18n="mSiemDoneTitle" class="font-bold text-white text-sm">ما تم إنجازه (تعدى 80%):</h5>
+                    <ul class="list-disc list-inside space-y-1 bg-slate-900 p-4 rounded-xl border border-slate-800 text-xs">
+                        <li data-i18n="mSiemD1">الربط التجريبي المباشر مع جدار الحماية (Firewall Logs).</li>
+                        <li data-i18n="mSiemD2">الربط مع جهازين لابتوب تجريبيين وتجميع كافة السجلات (Logs).</li>
+                        <li data-i18n="mSiemD3">معالجة الأخطاء وتنقية السجلات وضبط قواعد التنبيه (Alert Rules).</li>
+                        <li data-i18n="mSiemD4">الربط التكاملي مع فاحص الثغرات OpenVAS Scanner.</li>
+                        <li data-i18n="mSiemD5">الربط مع منظومة YARA Rules لتحليل الملفات الخبيثة.</li>
+                        <li data-i18n="mSiemD6">الربط التكاملي مع قاعدة بيانات VirusTotal Threat Intelligence API.</li>
+                        <li data-i18n="mSiemD7">التطابق ورسم الأحداث على إطار MITRE ATT&CK Framework.</li>
+                        <li data-i18n="mSiemD8">تفعيل منظومة Wazuh Vulnerability Scanning & File Integrity Monitoring (FIM).</li>
+                    </ul>
+                    <h5 data-i18n="mSiemCompTitle" class="font-bold text-white text-sm">الأطر العالمية المربوطة (Compliance Matrix):</h5>
+                    <p data-i18n="mSiemCompText" class="text-xs">تم جعل الأطر التالية كمكشاف ومرآة أمنية يومية لجميع الأحداث:</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-slate-800 rounded font-bold text-cyan-400 text-xs">HIPAA</span>
+                        <span class="px-2 py-1 bg-slate-800 rounded font-bold text-emerald-400 text-xs">NIST SP 800-53</span>
+                        <span class="px-2 py-1 bg-slate-800 rounded font-bold text-blue-400 text-xs">GDPR</span>
+                        <span class="px-2 py-1 bg-slate-800 rounded font-bold text-purple-400 text-xs">PCI</span>
+                        <span class="px-2 py-1 bg-slate-800 rounded font-bold text-amber-400 text-xs">PCI-DSS v4.0</span>
+                        <span class="px-2 py-1 bg-slate-800 rounded font-bold text-rose-400 text-xs">ISO 27001</span>
+                    </div>
+                    <div data-i18n="mSiemNextBox" class="p-4 bg-cyan-950/40 border border-cyan-800/60 rounded-xl text-cyan-200 text-xs">
+                        <h6 class="font-bold text-xs mb-1">الخطوة القادمة والإطلاق الرسمي:</h6>
+                        <p>سيتم التعميم والتطبيق على جميع أجهزة الموظفين قريبًا فور الانتهاء من طلبات الـ Administration Hardening المتبقية لضمان دقة الرؤية الأمنية.<br><strong>تاريخ الإطلاق الرسمي الكامل: الأحد 3 يناير 2027</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Integration Matrix -->
+        <div class="glass-panel rounded-2xl p-6 border-cyan-500/30">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-xs font-bold text-cyan-400 mb-1"><i class="fa-solid fa-network-wired"></i><span data-i18n="matrixTag">الهيكلية التقنية ونقاط التكامل | Integration & Architecture Matrix</span></div>
+                    <h3 data-i18n="matrixTitle" class="text-xl font-extrabold text-white">منظومة الـ SIEM Solution والربط التكاملي</h3>
+                </div>
+                <span data-i18n="zeroCostTag" class="px-3 py-1.5 rounded-lg bg-cyan-500/10 text-cyan-300 text-xs font-bold border border-cyan-500/30">تكلفة التراخيص: 0 ج.م (توفير كامل للشركة)</span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-6">
+                <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center"><i class="fa-solid fa-fire text-orange-500 text-lg mb-1"></i><p class="text-xs font-bold text-slate-200">Firewall Integration</p><p data-i18n="connectedTag" class="text-[10px] text-emerald-400 font-medium">مربوط بنجاح</p></div>
+                <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center"><i class="fa-solid fa-shield-virus text-cyan-400 text-lg mb-1"></i><p class="text-xs font-bold text-slate-200">OpenVAS Scanner</p><p data-i18n="connectedTag" class="text-[10px] text-emerald-400 font-medium">مربوط بنجاح</p></div>
+                <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center"><i class="fa-solid fa-dna text-purple-400 text-lg mb-1"></i><p class="text-xs font-bold text-slate-200">YARA Rules</p><p data-i18n="connectedTag" class="text-[10px] text-emerald-400 font-medium">مربوط بنجاح</p></div>
+                <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center"><i class="fa-solid fa-virus-slash text-rose-400 text-lg mb-1"></i><p class="text-xs font-bold text-slate-200">VirusTotal API</p><p data-i18n="connectedTag" class="text-[10px] text-emerald-400 font-medium">مربوط بنجاح</p></div>
+                <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center"><i class="fa-solid fa-chess-board text-amber-400 text-lg mb-1"></i><p class="text-xs font-bold text-slate-200">MITRE ATT&CK</p><p data-i18n="connectedTag" class="text-[10px] text-emerald-400 font-medium">مربوط بنجاح</p></div>
+                <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center"><i class="fa-solid fa-file-shield text-blue-400 text-lg mb-1"></i><p class="text-xs font-bold text-slate-200">Wazuh & FIM</p><p data-i18n="connectedTag" class="text-[10px] text-emerald-400 font-medium">مربوط بنجاح</p></div>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div class="flex items-center gap-2 text-xs text-slate-300"><i class="fa-solid fa-scale-balanced text-amber-400 text-base"></i><span data-i18n="complianceDesc">الامتثال للمرآة الأمنية والأطر العالمية:</span></div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-xs font-bold text-cyan-400">HIPAA</span>
+                    <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-xs font-bold text-emerald-400">NIST SP 800-53</span>
+                    <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-xs font-bold text-blue-400">GDPR</span>
+                    <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-xs font-bold text-purple-400">PCI</span>
+                    <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-xs font-bold text-amber-400">PCI-DSS v4.0</span>
+                    <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-xs font-bold text-rose-400">ISO 27001</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="glass-panel border-t border-slate-800/80 mt-12 py-6 px-4 lg:px-8 text-center text-xs text-slate-400">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p data-i18n="footerCopy">© 2026-2027 شركة ماركيرل للصناعات الدوائية - Marcyrl Pharmaceutical Industries. جميع الحقوق محفوظة.</p>
+            <span><span data-i18n="footerPrep">إعداد:</span> <strong class="text-slate-200">Eng. Mina Arian</strong></span>
+        </div>
+    </footer>
+
+    <script>
+        const i18nData = {
+            ar: {
+                companyName: "شركة ماركيرل للصناعات الدوائية", companySub: "Marcyrl Cybersecurity Project",
+                backLabel: "العودة للوحة الرئيسية",
+                sec3Badge: "3 أنظمة رئيسية",
+                sec3Title: "ثالثًا: الحلول والأنظمة الأمنية المستحدثة (New Implementation Solutions)",
+                sec3Sub: "جميع الأنظمة والحلول التي لم يسبق وجودها بشركة ماركيرل لتغطية كافة المحاور الأمنية",
+                openvasBadge: "مكتمل والمخرجات ممتازة",
+                mOpenVasText: "هو عبارة عن فاحص تقني شامل للثغرات، تم تثبيته وتجربته وتشغيله بنجاح باهر داخل بيئة شركة ماركيرل.",
+                mOpenVasResTitle: "النتائج الفعلية:",
+                mOpenVasR1: "اكتشاف الثغرات البرمجية والأنظمة التي تحتاج لتحديثات أمنية بشكل تلقائي.",
+                mOpenVasR2: "تقديم تقارير دورية تتيح للفريق إغلاق الثغرات قبل استغلالها.",
+                mOpenVasR3: "تم ربطه وتكامله بنجاح مع نظام الـ SIEM Solution المركزي.",
+                scannerBadge: "انطلق الأحد 1 نوفمبر 2026",
+                mScannerText: "نظام خاص تم انطلاقه رسميًا يوم <strong>الأحد الموافق 1 نوفمبر 2026</strong>، وأبدى نجاحًا باهرًا جدًا وملموسًا لدى الموظف النهائي.",
+                mScannerFeatTitle: "مميزات المنظومة:",
+                mScannerFeatText: "يتيح للموظفين فحص الروابط والوصلات قبل الضغط عليها لمنع الوصول للروابط المشبوهة أو البرمجيات الخبيثة، مما يحمي أجهزة وحسابات الشركة من الاختراق.",
+                siemBadge: "إنجاز > 80% • إطلاق 3 يناير 2027",
+                mSiemVision: "<strong>رؤية المشروع والتكلفة:</strong> فضّلنا الاعتماد على كفاءة التطبيق الذاتي بدلاً من تحميل الشركة مبالغ طائلة في أنظمة مدفوعة. النظام يعتمد بنسبة 100% على احترافية الـ Implementer وتجهيز القواعد والربط التكاملي.",
+                mSiemDoneTitle: "ما تم إنجازه (تعدى 80%):",
+                mSiemD1: "الربط التجريبي المباشر مع جدار الحماية (Firewall Logs).",
+                mSiemD2: "الربط مع جهازين لابتوب تجريبيين وتجميع كافة السجلات (Logs).",
+                mSiemD3: "معالجة الأخطاء وتنقية السجلات وضبط قواعد التنبيه (Alert Rules).",
+                mSiemD4: "الربط التكاملي مع فاحص الثغرات OpenVAS Scanner.",
+                mSiemD5: "الربط مع منظومة YARA Rules لتحليل الملفات الخبيثة.",
+                mSiemD6: "الربط التكاملي مع قاعدة بيانات VirusTotal Threat Intelligence API.",
+                mSiemD7: "التطابق ورسم الأحداث على إطار MITRE ATT&CK Framework.",
+                mSiemD8: "تفعيل منظومة Wazuh Vulnerability Scanning & File Integrity Monitoring (FIM).",
+                mSiemCompTitle: "الأطر العالمية المربوطة (Compliance Matrix):",
+                mSiemCompText: "تم جعل الأطر التالية كمكشاف ومرآة أمنية يومية لجميع الأحداث:",
+                mSiemNextBox: "<h6 class='font-bold text-xs mb-1'>الخطوة القادمة والإطلاق الرسمي:</h6><p>سيتم التعميم والتطبيق على جميع أجهزة الموظفين قريبًا فور الانتهاء من طلبات الـ Administration Hardening المتبقية لضمان دقة الرؤية الأمنية.<br><strong>تاريخ الإطلاق الرسمي الكامل: الأحد 3 يناير 2027</strong></p>",
+                matrixTag: "الهيكلية التقنية ونقاط التكامل | Integration & Architecture Matrix",
+                matrixTitle: "منظومة الـ SIEM Solution والربط التكاملي",
+                zeroCostTag: "تكلفة التراخيص: 0 ج.م (توفير كامل للشركة)",
+                connectedTag: "مربوط بنجاح",
+                complianceDesc: "الامتثال للمرآة الأمنية والأطر العالمية:",
+                footerCopy: "© 2026-2027 شركة ماركيرل للصناعات الدوائية - Marcyrl Pharmaceutical Industries. جميع الحقوق محفوظة.",
+                footerPrep: "إعداد:"
+            },
+            en: {
+                companyName: "Marcyrl Pharmaceutical Industries", companySub: "Marcyrl Cybersecurity Project",
+                backLabel: "Back to Dashboard",
+                sec3Badge: "3 Core Solutions",
+                sec3Title: "03. Newly Implemented Enterprise Solutions",
+                sec3Sub: "Previously absent systems covering every modern security axis",
+                openvasBadge: "Completed & Operational",
+                mOpenVasText: "A comprehensive vulnerability scanning solution, fully installed, configured, and operational within Marcyrl's IT infrastructure.",
+                mOpenVasResTitle: "Operational Deliverables:",
+                mOpenVasR1: "Automated identification of software vulnerabilities and unpatched systems.",
+                mOpenVasR2: "Periodic remediation reports empowering IT to patch flaws proactively.",
+                mOpenVasR3: "Seamless integration with the central Enterprise SIEM platform.",
+                scannerBadge: "Launched Sun, Nov 1, 2026",
+                mScannerText: "A proprietary link verification platform officially launched on <strong>Sunday, November 1, 2026</strong>, delivering measurable threat reduction.",
+                mScannerFeatTitle: "Key Capabilities:",
+                mScannerFeatText: "Enables staff to verify unknown links prior to interaction, blocking malicious redirects and phishing attempts to protect enterprise endpoints.",
+                siemBadge: ">80% Completed • Rollout Jan 3, 2027",
+                mSiemVision: "<strong>Strategic Implementation Note:</strong> Engineered entirely in-house to maximize budget efficiency while achieving tier-1 SOC capabilities. The platform relies 100% on expert custom rule development, log normalization, and integration.",
+                mSiemDoneTitle: "Key Milestones Achieved (>80% Complete):",
+                mSiemD1: "Live log ingestion from FortiGate Next-Gen Firewalls.",
+                mSiemD2: "Pilot agent deployment across test laptops for endpoint log collection.",
+                mSiemD3: "Log normalization, noise filtering, and custom alert rule tuning.",
+                mSiemD4: "Direct integration with OpenVAS Vulnerability Scanner.",
+                mSiemD5: "YARA rule engine integration for malware signature matching.",
+                mSiemD6: "VirusTotal Threat Intelligence API automation.",
+                mSiemD7: "Mapping of detected security events to MITRE ATT&CK Framework.",
+                mSiemD8: "Active Wazuh Vulnerability Scanning & File Integrity Monitoring (FIM).",
+                mSiemCompTitle: "Continuous Regulatory Alignment:",
+                mSiemCompText: "The SIEM matrix acts as a continuous real-time audit mirror mapped directly to international security standards:",
+                mSiemNextBox: "<h6 class='font-bold text-xs mb-1'>Next Steps & Enterprise Deployment:</h6><p>Full deployment across all corporate endpoints will commence immediately following the remaining administration hardening policies to guarantee total situational awareness.<br><strong>Official Enterprise Rollout Target: Sunday, January 3, 2027</strong></p>",
+                matrixTag: "Integration & Technical Architecture Matrix",
+                matrixTitle: "SIEM Solution Architecture & Security Integrations",
+                zeroCostTag: "Licensing Cost: $0 (100% In-House Engineering & Open Tech)",
+                connectedTag: "Fully Integrated",
+                complianceDesc: "Continuous Compliance & Governance Auditing:",
+                footerCopy: "© 2026-2027 Marcyrl Pharmaceutical Industries. All rights reserved.",
+                footerPrep: "Prepared by:"
+            }
+        };
+        let currentLang = 'ar';
+        function toggleLanguage() {
+            const html = document.documentElement; const langLabel = document.getElementById('langLabel');
+            currentLang = (currentLang === 'ar') ? 'en' : 'ar';
+            if (currentLang === 'en') { html.setAttribute('dir','ltr'); html.setAttribute('lang','en'); langLabel.innerText='العربية'; }
+            else { html.setAttribute('dir','rtl'); html.setAttribute('lang','ar'); langLabel.innerText='English'; }
+            document.querySelectorAll('[data-i18n]').forEach(el => { const k=el.getAttribute('data-i18n'); if(i18nData[currentLang] && i18nData[currentLang][k]) el.innerHTML = i18nData[currentLang][k]; });
+        }
+    </script>
+</body>
+</html>
