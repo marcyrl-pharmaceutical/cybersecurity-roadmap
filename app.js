@@ -1,7 +1,7 @@
 /* Marcyrl Cybersecurity Roadmap — front-end (shared by index.html, section.html, admin.html)
  * Paste your Apps Script Web App URL below (the one that ends with /exec).
  */
-const API_URL = 'PASTE_YOUR_WEB_APP_URL_HERE';
+const API_URL = 'https://script.google.com/macros/s/AKfycbxyGZcKitYU3a6eLalH6qjx3y_1A6q0bvacbWpTkeXue-flKu6rrK-iS9_4432LcFcP/exec';
 
 /* ------------------------------------------------------------------ */
 const PAGE = document.body.dataset.page;          // home | section | admin
